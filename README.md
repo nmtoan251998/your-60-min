@@ -1,4 +1,7 @@
 ## Installation
+$ git clone https://github.com/nmtoan251998/your-60-min.git
+
+Open index.html or type $ live-server in command line
 
 ## Copyright and License
 
