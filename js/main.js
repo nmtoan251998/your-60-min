@@ -3,12 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const addWorkBtn = document.querySelector("#addWorkButton");
     const minusWorkBtn = document.querySelector("#minusWorkButton");    
     let workDisplay = document.querySelector("#work-display");
-    let workCount = parseInt(workDisplay.textContent);
-
-    const addBreakBtn = document.querySelector("#addBreakButton");
-    const minusBreakBtn = document.querySelector("#minusBreakButton");
-    let breakDisplay = document.querySelector("#break-display");
-    let breakCount = parseInt(breakDisplay.textContent);
+    let workCount = parseInt(workDisplay.textContent);    
 
     const startBtn = document.querySelector("#start");
     const pauseBtn = document.querySelector("#pause");
@@ -17,15 +12,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let showTime = document.querySelector("#showtime");
 
-    const intervalDelay = 100;
+    const intervalDelay = 1000;
     let timingFunc, 
     minutes, 
     seconds;    
     
     addWorkBtn.addEventListener("click", () => workDisplay.innerHTML = ++workCount)
-    minusWorkBtn.addEventListener("click", () => workDisplay.innerHTML = (workCount === 0) ? 0 : --workCount)
-    addBreakBtn.addEventListener("click", () => breakDisplay.innerHTML = ++breakCount)
-    minusBreakBtn.addEventListener("click", () => breakDisplay.innerHTML = (breakCount === 0) ? 0 : --breakCount)
+    minusWorkBtn.addEventListener("click", () => workDisplay.innerHTML = (workCount === 0) ? 0 : --workCount)    
     
     const showTimeFunc = () => {            
         showTime.textContent = minutes +' : ' + --seconds;
