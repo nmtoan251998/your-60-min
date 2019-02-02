@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="Apply DOM knowledge into realistic">
+    <meta name="author" content="Noat">
+    <title>Pomodoro</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+   <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+ </head>
+ 
+<body>
+<!-- main container class -->
+<div class="container" id="main-container">
+    <div class="row">
+        <div class="col-xs-12" id="heading-panel">
+            <!-- main heading -->
+            <h3> Pomodoro </h3>
+            <i class="fa fa-clock-o fa-5x" aria-hidden="true"></i>
+        </div>
+        <!-- end of xs-12 -->
+        <!-- Work Section -->
+        <div class="col-xs-12" id="work-duration">
+            <h7> Work Duration </h7>
+            <button class="btn btn-default upperpanelBtn" id="addWorkButton">+</button>
+            <h7 id="work-display"> 0</h7>
+            <button class="btn btn-default upperpanelBtn" id="minusWorkButton">-</button>
+        </div>
+        <!-- end of xs-12 -->
+        <!-- Break Div -->
+        <div class="col-xs-12" id="break-duration">
+            <h7> Time setting </h7>
+            <!-- <button class="btn btn-default upperpanelBtn" id="addBreakButton"> Set </button> -->
+            <h7 id="break-display"> 0</h7>
+            <button class="btn btn-default upperpanelBtn" id=minusBreakButton> Set </button>
+        </div>
+        <!-- end of xs-12 -->
+        <!-- Start, Pause and Stop Buttons -->
+        <div class="col-xs-12" id="button-panel">
+            <button type="button" class="btn btn-success" id="start">Start </button>
+            <button type="button" class="btn btn-warning" id="pause">Pause</button>
+            <button type="button" class="btn btn-danger" id="resume">Resume
+            </button>
+            <button type="button" class="btn btn-danger" id="reset">Reset
+            </button>
+        </div>
+        <!-- end of xs-12 -->
+        <!-- Timer Div -->
+        <div class="col-xs-12" id="timer-panel">
+            <span id="showtime"> </span>
+        </div>
+        <!-- end of xs-12 -->
+    </div>
+    <!-- end of row -->
+</div>
+<!-- end of main-container -->
+ 
+ <!-- main.js -->
+    <script src="js/main.js"></script> 
+  <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+  </body> 
+</html>
